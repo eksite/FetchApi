@@ -5,5 +5,5 @@ import Fetch from "./fetch.js";
 import Fetchh from "./fetch-hook";
 
 
-ReactDOM.render(<Fetchh />, document.getElementById('root'));
+ReactDOM.render(<Fetch />, document.getElementById('root'));
 

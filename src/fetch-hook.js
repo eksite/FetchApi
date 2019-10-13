@@ -14,7 +14,6 @@ function Fetchh() {
             .then(setLoading(false))
             .then(fetchResult => setData(fetchResult.components));
     }, []);
-    console.log(data)
     if (loading) {
         return <img className="img" src={load} />
     } else {
@@ -36,12 +35,12 @@ function Fetchh() {
                         .map(element => (
                             <div className="boxes">
                                 <p>{element.name}</p>
-                                <p >{element.status}</p>
+                                <p>{element.status}</p>
                             </div>
-                        ))
+            ))
                 :
                 data.map(element =>
-                        <div className="boxes">
+                    <div className="boxes">
                     <p>{element.name}</p>
                     <p>{element.status}</p>
                 </div>

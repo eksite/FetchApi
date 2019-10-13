@@ -15,8 +15,8 @@ class Fetch extends React.Component {
     componentWillMount() {
         this.state.loading = true;
         fetch("https://status.datadoghq.com/history.json")
-            .then(Response => Response.json())
-            .then(fetchResult => this.setState({ loading: false, data: fetchResult.components }));
+        .then(Response => Response.json())
+        .then(fetchResult => this.setState({ loading: false, data: fetchResult.components }));
     }
 
     components() {
